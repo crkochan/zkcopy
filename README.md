@@ -1,5 +1,7 @@
 # zkcopy
 
+Forked from kshchepanovskyi/zkcopy
+
 Tool for fast copying ZooKeeper data between different clusters.
 Originally it was developed for copying big volumes of configuration over WAN.
 
@@ -17,11 +19,11 @@ mvn clean install
 java -jar target/zkcopy.jar --source server:port/path --target server:port/path
 ```
 
-For [docker](https://hub.docker.com/r/kshchepanovskyi/zkcopy/), use following commands:
+For [docker](https://hub.docker.com/r/crkochan/zkcopy/), use following commands:
 
 ```bash
 docker pull kshchepanovskyi/zkcopy
-docker run --rm -it kshchepanovskyi/zkcopy --source server:port/path --target server:port/path
+docker run --rm -it crkochan/zkcopy --source server:port/path --target server:port/path
 ```
 
 ## Options
